@@ -28,15 +28,16 @@ export const periciaTypes = [
   "Liquidação de Sentença",
   "Cálculos Financeiros",
   "Cálculos Trabalhistas",
-  "Indenizações e Lucros Cessantes",
+  "Danos e Lucros Cessantes",
   "Prestação de Contas",
   "Avaliação Patrimonial",
   "Análise de Demonstrativos Contábeis",
   "Investigação de Fraudes Contábeis e Financeiras",
-  "Verificação de Desvios e Inconsistências Financeiras",
-  "Obrigações Societárias",
+  "Verificação de Desvios e Inconsistências Financeiras",  
   "Cumprimento de Sentença",
   "Avaliação Econômico-Financeira",
+  "Documentoscopia",
+  "Grafoscopia",
 ];
 
 export const segments = [
@@ -53,7 +54,7 @@ export const segments = [
 export const complementaryServices = [
   "Elaboração de Laudos Periciais Contábeis",
   "Elaboração de Parecer Técnico",
-  "Respostas a Quesitos",
+  "Formulação e Respostas à Quesitos",
   "Impugnação de Laudos e Cálculos",
   "Assistência Técnica Processual",
   "Análise Documental e Financeira",
@@ -62,16 +63,14 @@ export const complementaryServices = [
 ];
 
 export const advisoryServices = [
-  "Apuração de Ganho de Capital",
-  "Regularização de Imposto de Renda Pessoa Física",
-  "Elaboração e Retificação de Declaração de Imposto de Renda",
-  "Assessoria em Malha Fina da Receita Federal",
-  "Análise Tributária para Compra e Venda de Imóveis",
-  "Cálculo de Impostos sobre Venda de Bens e Direitos",
   "Emissão de Certificados Digitais — PF e PJ",
-  "Organização Contábil para Processos Judiciais e Periciais",
-  "Elaboração de Relatórios Gerenciais e Demonstrativos Contábeis",
+  "Apuração de Ganho de Capital",
   "Elaboração e Análise — Laudos e Cálculos CAPAG",
+  "Análise Tributária para Compra e Venda de Imóveis",
+  "Organização Contábil para Processos Judiciais e Periciais",
+  "Cálculo de Impostos sobre Venda de Bens e Direitos",
+  "Assessoria em Malha Fina da Receita Federal",  
+  "Elaboração e Retificação de Declaração de Imposto de Renda",
 ];
 
 export const processSteps = [

@@ -19,7 +19,7 @@ export default function HomePage() {
       <ServiceGrid
         id="pericias"
         eyebrow="Especialidades"
-        title="Tipos de perícias contábeis"
+        title="Tipos de perícias"
         description="Atuação técnica em demandas que exigem prova contábil especializada, com metodologia adequada a cada objeto pericial."
         items={periciaTypes}
         columns={3}
@@ -28,7 +28,7 @@ export default function HomePage() {
         id="atuacao"
         eyebrow="Onde atuamos"
         title="Segmentos de atuação"
-        description="Experiência em diferentes instâncias e ritos processuais, além de procedimentos extrajudiciais e arbitragem."
+        description="Experiência em diferentes ritos processuais, além de procedimentos extrajudiciais e arbitragem."
         items={segments}
         columns={2}
         dark

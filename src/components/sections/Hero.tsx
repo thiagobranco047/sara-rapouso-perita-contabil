@@ -57,9 +57,9 @@ export function Hero() {
               </dd>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <dt className="text-caption text-[var(--color-muted)]">Região</dt>
+              <dt className="text-caption text-[var(--color-muted)]">Atuação</dt>
               <dd className="text-small font-medium text-[var(--color-navy-900)]">
-                {siteConfig.region}
+                Todo o território nacional
               </dd>
             </div>
           </dl>

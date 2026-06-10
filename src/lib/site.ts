@@ -7,7 +7,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sararapouso.com.br",
   locale: "pt_BR",
   language: "pt-BR",
-  email: "sararapouso.perita@outlook.com",
+  email: "sararapouso.peritacontabil@gmail.com",
   phone: "+5547996840403",
   phoneDisplay: "(47) 9 9684-0403",
   crc: "CRC SC - 38.308/O-0",
