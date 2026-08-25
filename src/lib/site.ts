@@ -3,7 +3,7 @@ export const siteConfig = {
   legalName: "Sara Rapouso Perita Contábil",
   title: "Sara Rapouso | Perita Contábil Judicial e Extrajudicial",
   description:
-    "Perita Contábil CRC SC 38.308/O-0. Laudos periciais, pareceres técnicos, cálculos judiciais e trabalhistas, assistência técnica e assessoria contábil-financeira em Santa Catarina e todo o Brasil.",
+    "Perita Contábil CRC SC 38.308/O-0 · CNPC 8237. Laudos periciais, pareceres técnicos, cálculos judiciais e trabalhistas, assistência técnica e assessoria contábil-financeira em Santa Catarina e todo o Brasil.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sararapouso.com.br",
   locale: "pt_BR",
   language: "pt-BR",
@@ -11,6 +11,7 @@ export const siteConfig = {
   phone: "+5547996840403",
   phoneDisplay: "(47) 9 9684-0403",
   crc: "CRC SC - 38.308/O-0",
+  cnpc: "CNPC 8237",
   role: "Perita Contábil Judicial e Extrajudicial",
   region: "Santa Catarina",
   country: "BR",
@@ -34,6 +35,8 @@ export const siteConfig = {
     "liquidação de sentença",
     "apuração de haveres",
     "dissolução societária",
+    "CNPC",
+    "Cadastro Nacional de Peritos Contábeis",
   ],
   social: [
     {

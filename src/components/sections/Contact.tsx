@@ -38,8 +38,9 @@ export function Contact() {
                   <p className="text-small text-blue-100/80">{siteConfig.role}</p>
                 </li>
                 <li>
-                  <p className="text-caption text-blue-300">CRC</p>
+                  <p className="text-caption text-blue-300">Registros</p>
                   <p className="text-small">{siteConfig.crc}</p>
+                  <p className="text-small">{siteConfig.cnpc}</p>
                 </li>
                 <li>
                   <p className="text-caption text-blue-300">Telefone / WhatsApp</p>

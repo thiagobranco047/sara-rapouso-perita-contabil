@@ -14,16 +14,15 @@ export function Footer() {
   return (
     <footer className="bg-[var(--color-navy-950)] text-white">
       <Container className="section-pad !pb-[var(--space-lg)]">
-        <div className="grid gap-[var(--space-lg)] md:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+        <div className="grid gap-[var(--space-lg)] md:grid-cols-2 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,0.75fr)_minmax(16rem,1.35fr)]">
+          <div>
             <Image
-              src="/images/logo-sr.png"
-              alt=""
-              width={64}
-              height={64}
-              className="mb-4 h-14 w-auto brightness-0 invert"
+              src="/images/logo-sara-rapouso.png"
+              alt={`${siteConfig.name} — logotipo`}
+              width={220}
+              height={88}
+              className="mb-4 h-14 w-auto sm:h-16"
             />
-            <p className="font-serif text-2xl font-semibold">{siteConfig.name}</p>
             <p className="mt-1 text-small text-blue-200/80">{siteConfig.role}</p>
             <p className="mt-4 max-w-md text-small text-blue-100/70">
               {siteConfig.description}
@@ -50,12 +49,14 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="min-w-0">
             <h3 className="text-caption mb-4 text-blue-300">Contato</h3>
             <ul className="space-y-3 text-small text-blue-100/90">
               <li>
-                <span className="block text-blue-300/70">CRC</span>
+                <span className="block text-blue-300/70">Registros</span>
                 {siteConfig.crc}
+                <br />
+                {siteConfig.cnpc}
               </li>
               <li>
                 <span className="block text-blue-300/70">Telefone</span>
@@ -70,7 +71,7 @@ export function Footer() {
                 <span className="block text-blue-300/70">E-mail</span>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="break-all hover:text-white"
+                  className="inline-block whitespace-nowrap hover:text-white"
                 >
                   {siteConfig.email}
                 </a>
@@ -96,7 +97,7 @@ export function Footer() {
             © {year} {siteConfig.legalName}. Todos os direitos reservados.
           </p>
           <p>
-            Contadora e Perita Contábil · {siteConfig.crc}
+            Contadora e Perita Contábil · {siteConfig.crc} · {siteConfig.cnpc}
           </p>
         </div>
       </Container>

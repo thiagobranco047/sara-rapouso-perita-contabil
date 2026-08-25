@@ -20,6 +20,10 @@ export function createMetadata(): Metadata {
       canonical: "/",
       languages: { [language]: "/" },
     },
+    icons: {
+      icon: [{ url: "/favicon.png", type: "image/png" }],
+      apple: [{ url: "/apple-touch-icon.png", type: "image/png" }],
+    },
     openGraph: {
       type: "website",
       locale,
@@ -62,8 +66,19 @@ export function createMetadata(): Metadata {
 }
 
 export function jsonLdGraph() {
-  const { url, name, legalName, description, email, phone, crc, role, region, geo } =
-    siteConfig;
+  const {
+    url,
+    name,
+    legalName,
+    description,
+    email,
+    phone,
+    crc,
+    cnpc,
+    role,
+    region,
+    geo,
+  } = siteConfig;
 
   const professionalService = {
     "@type": "ProfessionalService",
@@ -74,8 +89,8 @@ export function jsonLdGraph() {
     url,
     email,
     telephone: phone,
-    image: `${url}/images/logo-sr.png`,
-    logo: `${url}/images/logo-sr.png`,
+    image: `${url}/images/logo-sara-rapouso.png`,
+    logo: `${url}/images/logo-sara-rapouso.png`,
     areaServed: [
       { "@type": "State", name: region },
       { "@type": "Country", name: "Brasil" },
@@ -105,11 +120,18 @@ export function jsonLdGraph() {
     telephone: phone,
     image: `${url}/images/sara-rapouso-01.png`,
     worksFor: { "@id": `${url}/#organization` },
-    identifier: {
-      "@type": "PropertyValue",
-      name: "CRC SC",
-      value: crc.replace("CRC SC - ", ""),
-    },
+    identifier: [
+      {
+        "@type": "PropertyValue",
+        name: "CRC SC",
+        value: crc.replace("CRC SC - ", ""),
+      },
+      {
+        "@type": "PropertyValue",
+        name: "CNPC",
+        value: cnpc.replace("CNPC ", ""),
+      },
+    ],
     areaServed: region,
     sameAs: siteConfig.social.map((s) => s.href),
   };

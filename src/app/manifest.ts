@@ -13,8 +13,13 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: siteConfig.language,
     icons: [
       {
-        src: "/images/logo-sr.png",
-        sizes: "512x512",
+        src: "/favicon.png",
+        sizes: "any",
+        type: "image/png",
+      },
+      {
+        src: "/apple-touch-icon.png",
+        sizes: "180x180",
         type: "image/png",
       },
     ],

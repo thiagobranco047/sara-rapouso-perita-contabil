@@ -49,6 +49,9 @@ export function Hero() {
               <dd className="text-small font-medium text-[var(--color-navy-900)]">
                 {siteConfig.crc}
               </dd>
+              <dd className="text-small font-medium text-[var(--color-navy-900)]">
+                {siteConfig.cnpc}
+              </dd>
             </div>
             <div>
               <dt className="text-caption text-[var(--color-muted)]">Atuação</dt>

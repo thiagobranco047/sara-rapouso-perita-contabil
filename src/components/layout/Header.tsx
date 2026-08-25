@@ -127,25 +127,17 @@ export function Header() {
               ref={logoRef}
               href="#inicio"
               onClick={handleLogoClick}
-              className="relative z-[60] flex shrink-0 items-center gap-2 sm:gap-3"
+              className="relative z-[60] flex shrink-0 items-center"
               aria-label="Sara Rapouso — ir para o início"
             >
               <Image
-                src="/images/logo-sr.png"
+                src="/images/logo-sara-rapouso-header.png"
                 alt=""
-                width={48}
-                height={48}
-                className="h-9 w-auto md:h-11"
+                width={201}
+                height={150}
+                className="h-12 w-auto md:h-14 lg:h-16"
                 priority
               />
-              <span className="hidden flex-col lg:flex">
-                <span className="text-caption text-[var(--color-navy-900)]">
-                  Sara Rapouso
-                </span>
-                <span className="text-[0.6rem] tracking-[0.18em] text-[var(--color-muted)] uppercase">
-                  Perita Contábil
-                </span>
-              </span>
             </a>
 
             <ul

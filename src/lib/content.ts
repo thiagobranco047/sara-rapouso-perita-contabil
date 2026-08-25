@@ -1,5 +1,5 @@
 export const heroContent = {
-  eyebrow: "CRC SC · 38.308/O-0",
+  eyebrow: "CRC SC · 38.308/O-0 · CNPC 8237",
   headline: "Perícia contábil com rigor técnico e clareza para o Judiciário",
   subheadline:
     "Laudos, pareceres e cálculos periciais em demandas cíveis, empresariais, trabalhistas e extrajudiciais — com metodologia transparente e linguagem acessível às partes.",
@@ -10,15 +10,15 @@ export const heroContent = {
 export const aboutContent = {
   title: "Sobre a perita",
   paragraphs: [
-    "Sara Rapouso é contadora e Perita Contábil Judicial e Extrajudicial, registrada no Conselho Regional de Contabilidade de Santa Catarina (CRC SC 38.308/O-0), com atuação voltada à produção de provas técnicas contábeis em processos judiciais e procedimentos extrajudiciais.",
+    "Sara Rapouso é contadora e Perita Contábil Judicial e Extrajudicial, registrada no Conselho Regional de Contabilidade de Santa Catarina (CRC SC 38.308/O-0) e no Cadastro Nacional de Peritos Contábeis (CNPC 8237), com atuação voltada à produção de provas técnicas contábeis em processos judiciais e procedimentos extrajudiciais.",
     "O trabalho pericial combina análise documental e financeira, conferência de cálculos, elaboração de laudos e pareceres e resposta fundamentada a quesitos, sempre com foco na objetividade, na rastreabilidade das conclusões e no suporte efetivo à decisão judicial ou à composição entre as partes.",
     "A experiência abrange varas cíveis, empresariais, da Fazenda Pública, do Trabalho, juizados especiais, arbitragem e mediação, além de demandas extrajudiciais e assistência técnica às partes.",
   ],
   highlights: [
     { label: "Registro profissional", value: "CRC SC 38.308/O-0" },
+    { label: "CNPC", value: "8237" },
     { label: "Atuação", value: "Judicial e extrajudicial" },
-    { label: "Abrangência", value: "Santa Catarina e todo o Brasil" },
-    { label: "Entrega", value: "Laudos, pareceres e assistência técnica" },
+    { label: "Abrangência", value: "Todo o território nacional" },
   ],
 };
 

@@ -38,8 +38,8 @@ export default function RootLayout({
   return (
     <html lang={siteConfig.language}>
       <head>
-        <link rel="icon" href="/images/logo-sr.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/logo-sr.png" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={`${montserrat.variable} ${cormorant.variable} antialiased`}>
         <JsonLd />
