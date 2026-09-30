@@ -3,6 +3,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { SocialLinks } from "@/components/layout/SocialLinks";
+import { ContactAnchor } from "@/components/ui/ContactAnchor";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -60,35 +61,34 @@ export function Footer() {
               </li>
               <li>
                 <span className="block text-blue-300/70">Telefone</span>
-                <a
+                <ContactAnchor
                   href={`tel:${siteConfig.phone}`}
                   className="hover:text-white"
                 >
                   {siteConfig.phoneDisplay}
-                </a>
+                </ContactAnchor>
               </li>
               <li>
                 <span className="block text-blue-300/70">E-mail</span>
-                <a
+                <ContactAnchor
                   href={`mailto:${siteConfig.email}`}
                   className="inline-block whitespace-nowrap hover:text-white"
                 >
                   {siteConfig.email}
-                </a>
+                </ContactAnchor>
               </li>
               <li>
                 <span className="block text-blue-300/70">Região</span>
                 {siteConfig.region} · Brasil
               </li>
             </ul>
-            <a
+            <ContactAnchor
               href={whatsappHref}
-              target="_blank"
-              rel="noopener noreferrer"
+              newTab
               className="mt-6 inline-flex rounded-[var(--radius-md)] bg-[var(--color-blue-500)] px-5 py-2.5 text-small font-medium text-white transition-colors hover:bg-[var(--color-blue-400)]"
             >
               WhatsApp
-            </a>
+            </ContactAnchor>
           </div>
         </div>
 

@@ -53,6 +53,26 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-18482667250');
+
+            function gtag_report_conversion(url) {
+              var navigated = false;
+              var callback = function () {
+                if (navigated) return;
+                navigated = true;
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                'send_to': 'AW-18482667250/J2m6CJT_6IodEPK9nO1E',
+                'event_callback': callback
+              });
+              if (typeof(url) != 'undefined') {
+                setTimeout(callback, 1000);
+              }
+              return false;
+            }
+            window.gtag_report_conversion = gtag_report_conversion;
           `}
         </Script>
         <JsonLd />

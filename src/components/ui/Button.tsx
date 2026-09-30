@@ -1,11 +1,15 @@
+"use client";
+
 import Link from "next/link";
-import { type ReactNode } from "react";
+import { type MouseEvent, type ReactNode } from "react";
+import { trackContactClick } from "@/lib/gtag";
 
 type ButtonProps = {
   href: string;
   children: ReactNode;
   variant?: "primary" | "secondary" | "ghost" | "onDark" | "onDarkOutline";
   external?: boolean;
+  trackContact?: boolean;
   className?: string;
 };
 
@@ -27,12 +31,18 @@ export function Button({
   children,
   variant = "primary",
   external = false,
+  trackContact = false,
   className = "",
 }: ButtonProps) {
   const base =
     "inline-flex items-center justify-center gap-2 rounded-[var(--radius-md)] px-[var(--space-md)] py-[var(--space-xs)] text-small font-medium tracking-wide transition-colors duration-200";
 
   const classes = `${base} ${variants[variant]} ${className}`.trim();
+
+  function handleContactClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (!trackContact) return;
+    trackContactClick(event, external);
+  }
 
   if (external) {
     return (
@@ -41,6 +51,7 @@ export function Button({
         className={classes}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleContactClick}
       >
         {children}
       </a>

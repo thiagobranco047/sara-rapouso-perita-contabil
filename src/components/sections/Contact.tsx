@@ -1,5 +1,6 @@
 import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
+import { ContactAnchor } from "@/components/ui/ContactAnchor";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -44,21 +45,21 @@ export function Contact() {
                 </li>
                 <li>
                   <p className="text-caption text-blue-300">Telefone / WhatsApp</p>
-                  <a
+                  <ContactAnchor
                     href={`tel:${siteConfig.phone}`}
                     className="text-base leading-[var(--leading-subheading)] hover:text-blue-200"
                   >
                     {siteConfig.phoneDisplay}
-                  </a>
+                  </ContactAnchor>
                 </li>
                 <li>
                   <p className="text-caption text-blue-300">E-mail</p>
-                  <a
+                  <ContactAnchor
                     href={`mailto:${siteConfig.email}`}
                     className="break-all text-small hover:text-blue-200"
                   >
                     {siteConfig.email}
-                  </a>
+                  </ContactAnchor>
                 </li>
                 <li>
                   <p className="text-caption text-blue-300">Área de atuação</p>
@@ -79,12 +80,13 @@ export function Contact() {
               número do processo, vara e objeto da perícia, se disponíveis.
             </p>
             <div className="flex flex-col items-center gap-[var(--space-sm)] max-lg:items-stretch lg:items-start">
-              <Button href={whatsappHref} external className="w-full justify-center">
+              <Button href={whatsappHref} external trackContact className="w-full justify-center">
                 WhatsApp
               </Button>
               <Button
                 href={mailto}
                 external
+                trackContact
                 variant="secondary"
                 className="w-full justify-center"
               >
@@ -93,6 +95,7 @@ export function Contact() {
               <Button
                 href={`tel:${siteConfig.phone}`}
                 external
+                trackContact
                 variant="ghost"
                 className="w-full justify-center"
               >

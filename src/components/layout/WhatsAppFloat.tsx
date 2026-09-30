@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site";
+import { ContactAnchor } from "@/components/ui/ContactAnchor";
 
 function WhatsAppIcon() {
   return (
@@ -21,14 +22,13 @@ export function WhatsAppFloat() {
   const href = `https://wa.me/${siteConfig.phone.replace(/\D/g, "")}?text=${message}`;
 
   return (
-    <a
+    <ContactAnchor
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      newTab
       aria-label={`Conversar no WhatsApp — ${siteConfig.phoneDisplay}`}
       className="fixed right-[var(--container-padding)] bottom-[var(--container-padding)] z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.45)] transition-transform duration-200 hover:scale-105 hover:bg-[#20bd5a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] sm:h-[3.75rem] sm:w-[3.75rem]"
     >
       <WhatsAppIcon />
-    </a>
+    </ContactAnchor>
   );
 }
